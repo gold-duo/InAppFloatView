@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.obaniu.inappfloatview" >
+
+    <application>
+<!--        <provider
+                android:name=".InAppFloatViewInitializer"
+                android:authorities="${applicationId}.trojan"
+                android:exported="false"
+                android:multiprocess="true" />-->
+    </application>
+
+</manifest>
