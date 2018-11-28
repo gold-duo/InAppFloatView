@@ -1,4 +1,4 @@
-# Inappfloatview
+# InAppFloatView
 [中文](README-chs.md)
 
 Do not require float window permissions apply to floating window controls within the app
