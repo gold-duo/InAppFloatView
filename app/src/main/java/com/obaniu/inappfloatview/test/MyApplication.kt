@@ -28,8 +28,10 @@ class MyApplication : Application() {
             Log.i("InAppFloatView", "onChanged:$tag")
         }
 
-        val params = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, Common.randPosition)
-        InAppFloatView.show(R.layout.float_view, Common.FLOAT_VIEW_FEED_BACK, params, true)
+        if(isMainProcess) {
+            val params = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, Common.randPosition)
+            InAppFloatView.show(R.layout.float_view, Common.FLOAT_VIEW_FEED_BACK, params, true)
+        }
     }
 
     private fun getCurrentProcessName(): String? {
